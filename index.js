@@ -1,6 +1,8 @@
 var readLineSync = require('readline-sync');
-var userDate = readLineSync.question('Please enter ur date in DD format: ');
-var userMonth = readLineSync.question('Please enter ur month in MM format: ');
+var userDate = readLineSync.question('Please enter your date in DD format: ');
+var userMonth = readLineSync.question('Please enter your month in MM format: ');
+
+console.log("You Entered " + userDate + "/" + userMonth);
 
 if ( userMonth == 02 && userDate < 29){
   primeNumber(userDate);
